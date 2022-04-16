@@ -1,0 +1,46 @@
+[
+{
+    "id": 1,
+    "name": "SAINT MARTIN ISLAND | Bangladesh",
+    "price": "100$ /per person",
+    "description": "Saint Martin is a small but very beautiful coral Island of Bangladesh. The Island is a very quiet, neat and clean place. Every corners of this Island has different look and are very attractive. Here you will find live and dead coral, lots of coconut trees that is why its local name is Narikel Jinjira..",
+    "img": "https://i.ibb.co/VgbqZFK/saint-martin.jpg"
+},
+{
+    "id": 2,
+    "name": "Mecklenburg-Vorpommern | Germany",
+    "price": "400$ /per person",
+    "description": "Mecklenburg-Vorpommern, affectionately known as Meckpom, or Mecklenburg-West Pomerania in English, is a wonderful green region just North of Berlin. You can make the trip to this northernmost state by car or train fairly quickly and cheaply,.",
+    "img": "https://i.ibb.co/9ZyF9cn/germany.jpg"
+},
+{
+    "id": 3,
+    "name": "Mountain Escape | USA",
+    "price": "450$ /per person",
+    "description": "Navigate rapids on a paddling trip down the Ocoee river, stare into the face of a massive gorge and venture into bucolic towns. Even amid pine forests, lakes and mountains, you’ll still discover terrific dining and shopping. Fly into Atlanta International Airport (ATL) and rent a car to drive a little over an hour to Dawsonville, Georgia, the first little getaway on your route..",
+    "img": "https://i.ibb.co/56vjCLF/mountan.jpg"
+},
+{
+    "id": 4,
+    "name": "Nainital - Lake District of Uttarakhand | India",
+    "price": "300$ /per person",
+    "description": "The tranquillity of Nainital will amaze you. The beautiful lakes and sprawling scenery will startle you. Other than sightseeing you can also visit the glowing Himalayan range snow view..",
+    "img": "https://i.ibb.co/F7Ltz9V/naintala-india.jpg"
+},
+{
+    "id": 5,
+    "name": "Skiing In Alps | Austria",
+    "price": "1050$ /per person",
+    "description": "The Alps are the highest and most extensive mountain range system that lies entirely in Europe, stretching approximately 1,200 km across eight Alpine countries: France, Switzerland, Monaco, Italy, Liechtenstein, Austria, Germany, and Slovenia.",
+    "img": "https://i.ibb.co/ChHXYCs/skipings-australiya.jpg"
+},
+{
+    "id": 6,
+    "name": "Sonmarg, Kashmir – The Meadow Of Gold | Pakistan",
+    "price": "350$ /per person",
+    "description": "A place, so beautiful that you will never want to return home! It is an ideal vacation for anyone who wishes to enjoy some good snowy wintertime with friends and family.",
+    "img": "https://i.ibb.co/ZLqhf96/kashmir.jpg"
+}
+]
+
+
