@@ -3,7 +3,7 @@ import Service from '../Service/Service';
 import './Services.css'
 
 const Services = () => {
-
+// fetch data
     const [services, setServices] = useState([]);
     useEffect(()=>{
         fetch('services.json')
@@ -12,7 +12,7 @@ const Services = () => {
     },[])
     return (
         <div>
-            <h1 className='services-title'>Our services</h1>
+            <h1 className='services-title'>Our Services</h1>
            <div id="services" className='services-container'>
            {
                 services.map(service=> <Service

@@ -4,7 +4,7 @@ import picture from '../../images/about me/ananya1_n.jpg'
 
 const About = () => {
     return (
-        
+        // flex element
         <div className='d-flex'>
          <div>
             <img src={picture} height="400px" width="400px" alt="" /></div>

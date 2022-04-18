@@ -38,7 +38,9 @@ const Register = () => {
     return (
         <div className='container w-50 mx-auto mt-2'>
             <h2 className='text-center text-primary'>Please Register</h2>
+
 {/* attach handleRegister */}
+            
             <Form onSubmit={handleRegister}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Name</Form.Label>
@@ -61,11 +63,13 @@ const Register = () => {
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
+
    {/* button set */}
   <Button variant="primary w-50 mx-auto d-block" type="submit">
     Submit
   </Button>
 </Form>
+
 {/* toggle part */}
 <p>Already have an account? <Link to="/login"className='text-danger text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
 <Sociallogin></Sociallogin>

@@ -3,6 +3,8 @@ import React from 'react';
 
 const Blog = () => {
     return (
+        <div>
+            <h1 className='text-center text-primary'>Blog</h1>
         <div className='  p-10 mx-5 my-5'>
             <h2>Diffrence between Authentication and Authorization?</h2>
             <h4>Authentication confirms the identity of the user where  What resources a user has access to is determined by authorization. Passwords, one-time pins, biometric information, and other information provided or entered by the user are used for authentication on the other side  Authorization is controlled by the organization's settings, which it implements and maintains. The first step in a successful identity and access management strategy is authentication. Authentication is always followed by authorization. The user can see and alter several aspects of authentication on the other hand  The user has no visibility into or control over authorization.</h4>
@@ -33,6 +35,7 @@ const Blog = () => {
 <h4>7.Cloud Messaging</h4>
 <h4>8.Dynamic Links</h4>
 <h4>9.Remote Config</h4>
+        </div>
         </div>
     );
 };
