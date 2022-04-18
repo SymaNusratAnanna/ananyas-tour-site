@@ -1,6 +1,6 @@
 # Ananyas Tour Site
 
-This project was bootstrapped with [Ananyas Tour Site](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Ananyas Tour Site](https://ananyas-tour-site.web.app/).
 
 ## Features of Ananyas Tour Site 
 
