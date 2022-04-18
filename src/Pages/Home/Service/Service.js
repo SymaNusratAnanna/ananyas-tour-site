@@ -6,13 +6,7 @@ import './Service.css'
 const Service = ({service}) => {
     const {name,img,description,price } = service;
     return (
-        // <div className='service'>
-        //    <img src={img}  alt="" />
-        //    <h2>{name}</h2>
-        //    <p>Price : {price}</p>
-        //    <p><small>{description}</small></p>
-        //    <button>Book </button>
-        // </div>
+       
 
         <div class="card mt-10 g-5 my-5 mx-5 col-sm-12 col-md-6 col-lg-4"
          style={{width: "18rem"}}>
@@ -29,8 +23,7 @@ const Service = ({service}) => {
       <button className='btn btn-primary'>Book</button> 
     </Link>
 
-    {/* <button class="btn btn-primary">Book </button> */}
-    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+    
   </div>
   </div>
 </div>

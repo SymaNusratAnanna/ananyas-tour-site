@@ -1,9 +1,12 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Sociallogin from '../Sociallogin/Sociallogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -19,6 +22,7 @@ let errorElement;
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const[sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
       if(user){
           navigate (from, {replace: true});
@@ -45,6 +49,13 @@ let errorElement;
         navigate('/register');
 
     }
+
+    const resetPassword = async() =>{
+      const email=emailRef.current.value;
+      await sendPasswordResetEmail(email);
+       toast('sent email');
+    }
+
     return (
         <div className='container w-50 mx-auto mt-2'>
             <h2 className='text-primary'>Please Login</h2>
@@ -69,10 +80,12 @@ let errorElement;
   <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
     Login
   </Button>
-</Form>
-{errorElement}
-<p>New to Ananya's Tour Site? <Link to="/register"className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
-<Sociallogin></Sociallogin>
+  </Form>
+  {errorElement}
+  <p>New to Ananya's Tour Site? <Link to="/register"className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+  <p> Forget Password? <button className=' btn btn-link text-primary text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+  <Sociallogin></Sociallogin>
+  <ToastContainer />
         </div>
     );
 };
