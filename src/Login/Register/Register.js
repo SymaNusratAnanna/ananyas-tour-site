@@ -37,7 +37,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto mt-2'>
-            <h2 className='text-center'>plz register</h2>
+            <h2 className='text-center text-primary'>Please Register</h2>
 {/* attach handleRegister */}
             <Form onSubmit={handleRegister}>
   <Form.Group className="mb-3" controlId="formBasicEmail">

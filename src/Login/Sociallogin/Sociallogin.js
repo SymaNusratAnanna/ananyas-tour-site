@@ -35,6 +35,7 @@ let errorElement;
                 <div style={{height:"1px"}} className='bg-primary w-50'></div>
                 </div>
                 {errorElement}
+                {/* set button */}
             <button 
             onClick={()=> signInWithGoogle()}
             className='btn btn-light w-50 d-block mx-auto'>
