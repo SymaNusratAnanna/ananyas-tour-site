@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 
 // import images
-import banner1 from '../../../images/banner/banner1.jpg'
+import banner1 from '../../../images/banner/banner3.jpg'
 import banner2 from '../../../images/banner/banner2.jpg'
-import banner3 from '../../../images/banner/banner3.jpg'
+import banner3 from '../../../images/banner/banner1.jpg'
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -21,8 +21,8 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Tour with Ananya's guid</h3>
-            <p>Travel with us and get exciting discount for you & your Family..</p>
+            <h2>Tour with Ananya's guid</h2>
+            <h4>Travel with us and get exciting discount for you & your Family..</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -33,8 +33,8 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h3>Tour with Ananya's guid</h3>
-            <p>Travel with us and get exciting discount for you & your Family...</p>
+            <h2>Tour with Ananya's guid</h2>
+            <h4>Travel with us and get exciting discount for you & your Family...</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -45,10 +45,10 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h3>Tour with Ananya's guid</h3>
-            <p>
+            <h2>Tour with Ananya's guid</h2>
+            <h4>
             Travel with us and get exciting discount for you & your Family..
-            </p>
+            </h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

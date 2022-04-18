@@ -14,10 +14,10 @@ const Service = ({service}) => {
 
   <img src={img} class="card-img-top" alt="..."/>
   <div class="card-body">
-    <h5 class="card-title">{name}</h5>
+    <h3 class="card-title">{name}</h3>
    
     <p class="card-text">{description}</p>
-    <p class="card-text">Price : {price}</p>
+    <h4 class="card-text">Price : {price}</h4>
 
     <Link to ="/checkout">
       <button className='btn btn-primary'>Book</button> 
