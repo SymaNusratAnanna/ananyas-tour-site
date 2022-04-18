@@ -12,7 +12,7 @@ const Login = () => {
 const location = useLocation();
 
 let from = location.state?.from?.pathname || "/";
-
+let errorElement;
     const [
         signInWithEmailAndPassword,
         user,
@@ -23,6 +23,15 @@ let from = location.state?.from?.pathname || "/";
       if(user){
           navigate (from, {replace: true});
       }
+
+      // error message
+      if (error) {
+        errorElement=<div>
+          <p className='text-danger'>Error: {error?.message}</p>
+        </div>
+  }
+
+
 
     const handleSubmit = event =>{
         event.preventDefault();
@@ -56,10 +65,12 @@ let from = location.state?.from?.pathname || "/";
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <Button variant="primary" type="submit">
-    Submit
+  {/* button set */}
+  <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+    Login
   </Button>
 </Form>
+{errorElement}
 <p>New to Ananya's Tour Site? <Link to="/register"className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
 <Sociallogin></Sociallogin>
         </div>
