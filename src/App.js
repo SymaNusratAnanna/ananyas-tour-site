@@ -12,6 +12,7 @@ import Register from './Login/Register/Register';
 import Checkout from './Pages/Checkout/Checkout';
 import RequiredAuth from './Login/RequiredAuth/RequiredAuth';
 import Video from './Pages/Video/Video';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path= "/services" element={<Services></Services>}> </Route>
         <Route path= "/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
         {/* protected route set */}
         <Route path="/checkout" element={<RequiredAuth><Checkout></Checkout></RequiredAuth>}></Route>
         <Route path="/video" element={<Video></Video>}></Route>
